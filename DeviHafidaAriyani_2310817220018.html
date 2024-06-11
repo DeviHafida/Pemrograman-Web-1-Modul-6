@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .hero-section h1, .hero-section p {
+            margin: 0;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery .col-md-3 {
+            padding: 10px; /* Jarak antara setiap frame */
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+        }
+        .footer .social-icons i {
+            font-size: 24px;
+            color: #6c757d; /* gray color */
+        }
+        .filter-buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filter-buttons button {
+            margin: 5px;
+            color: #6c757d; 
+            border-radius: 50px; 
+            background-color: transparent; 
+            border: none; 
+        }
+        .filter-buttons button:hover {
+            background-color: #6c757d; 
+            color: #fff; 
+        }
+        .navbar-brand {
+            font-weight: bold; 
+        }
+        .footer p {
+            font-family: Georgia, 'Times New Roman', Times, serif; 
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">JPhotography</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container hero-section">
+        <h1><b>Hi. Hello. I Am JohnDas...!</b></h1>
+        <h2><b>I Travel Around The World To Get The Best Photos.!</b></h2>
+        <p><b><span style="font-family: Georgia, 'Times New Roman', Times, serif;"></span></b></p>
+        <p><span style="font-style: 'Franklin Gothic Heavy';">AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</span></p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="container filter-buttons">
+        <button class="btn" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('landscape')">Landscape</button>
+        <button class="btn" onclick="filterSelection('portrait')">Portrait</button>
+        <button class="btn" onclick="filterSelection('product')">Product</button>
+    </div>
+
+ <!-- Gallery Section -->
+ <div class="container gallery">
+    <div class="row">
+        <div class="col-md-3 filterDiv landscape">
+            <img src="https://i.pinimg.com/736x/cc/a8/f0/cca8f0e6abb39ef68735b0215a27a612.jpg" alt="Image 1">
+        </div>
+        <div class="col-md-3 filterDiv portrait">
+            <img src="https://asset.kompas.com/crops/cpujMU7weWppKMs2HmTrfo3ugSg=/16x5:5184x3451/750x500/data/photo/2022/08/04/62eb194fd834d.jpg" alt="Image 2">
+        </div>
+        <div class="col-md-3 filterDiv product">
+            <img src="https://asset.kompas.com/crops/moxXQHRooGKauCFSnsfOSJqUJdk=/192x178:1728x1202/750x500/data/photo/2021/04/09/606f3ff72c3ae.jpg" alt="Image 3">
+        </div>
+        <div class="col-md-3 filterDiv landscape">
+            <img src="https://www.flokq.com/blog/wp-content/uploads/2022/03/6accdf5710e9ed300dad271cf917d4ed-1.jpg" alt="Image 4">
+        </div>
+        <div class="col-md-3 filterDiv portrait">
+            <img src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/2b18734d2235449c968b3092f2270ab0~tplv-tej9nj120t-origin.webp" alt="Image 5">
+        </div>
+        <div class="col-md-3 filterDiv product">
+            <img src="https://www.picturethisai.com/wiki-image/1080/154125700322820125.jpeg" alt="Image 6">
+        </div>
+        <div class="col-md-3 filterDiv landscape">
+            <img src="https://www.ruparupa.com/blog/wp-content/uploads/2022/03/plantslive_alamanda_creeper_2-scaled-e1647492826283.jpg" alt="Image 7">
+        </div>
+        <div class="col-md-3 filterDiv portrait">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Helianthus_annuus_exposed_2004-05-22.jpg/640px-Helianthus_annuus_exposed_2004-05-22.jpg" alt="Image 8">
+        </div>
+        <div class="col-md-3 filterDiv product">
+            <img src="https://bibitbunga.com/wp-content/uploads/2017/04/arti-dan-makna-bunga-azalea.jpg" alt="Image 9">
+        </div>
+        <div class="col-md-3 filterDiv landscape">
+            <img src="https://asset.kompas.com/crops/4D7ldjxrXzQ4EkXJHAJpexgeLNE=/0x0:1920x1280/750x500/data/photo/2022/08/18/62fdfb3966e5f.jpg" alt="Image 10">
+        </div>
+        <div class="col-md-3 filterDiv portrait">
+            <img src="https://cdn.idntimes.com/content-images/community/2022/01/31903-6719b6d09a65421ef65997ca22754bfc-610adf12a0bf2dbfc1ce1710c6da75e9.jpeg" alt="Image 11">
+        </div>
+        <div class="col-md-3 filterDiv product">
+            <img src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/07/18/IMG_20230718_225226-963948638.jpg" alt="Image 12">
+        </div>
+        <div class="col-md-3 filterDiv landscape">
+            <img src="https://d12man5gwydfvl.cloudfront.net/wp-content/uploads/2018/12/Bunga-bunga-4-940x662.jpg" alt="Image 13">
+        </div>
+        <div class="col-md-3 filterDiv portrait">
+            <img src="https://www.delovery.com/blog/wp-content/uploads/2018/02/cosmos-flowers-isolated-white-background-1.jpg" alt="Image 14">
+        </div>
+        <div class="col-md-3 filterDiv product">
+            <img src="https://frankncojewellery.com/media/django_ckeditor_5/WhatsApp%20Image%202021-04-29%20at%2016.16.20%20(3)_HJX3FUz.jpeg" alt="Image 15">
+        </div>
+        <div class="col-md-3 filterDiv landscape">
+            <img src="https://www.mongabay.co.id/wp-content/uploads/2022/10/Anggrek-macan1.jpeg" alt="Image 16">
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <div class="footer">
+            <h2><b> JPhotography </b></h2>
+            <p>© Copyrights 2019. All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-dribbble text-secondary"></i></a>
+                <a href="#"><i class="fab fa-behance text-secondary"></i></a>
+                <a href="#"><i class="fab fa-instagram text-secondary"></i></a>
+                <a href="#"><i class="fab fa-snapchat text-secondary"></i></a>
+                <a href="#"><i class="fab fa-flickr text-secondary"></i></a>
+                <a href="#"><i class="fab fa-facebook-f text-secondary"></i></a>
+                <a href="#"><i class="fab fa-twitter text-secondary"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filterSelection(category) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (category == "all") category = "";
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                if (x[i].className.indexOf(category) > -1) x[i].style.display = "block";
+            }
+        }
+        filterSelection("all"); // Show all items by default
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.51.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
